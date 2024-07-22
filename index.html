@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+  padding: 100px 300px;
+  transition: 0.5s;
+
+}
+
+.main
+{
+  background-color: rgba(250, 215, 215, 0.521);
+  padding: 20px;
+}
+#opt1
+{
+  margin: 10px;
+  background-color: #2298bf8d;
+}
+#opt2
+{
+  margin: 10px;
+  background-color: #2298bf8d;
+  
+}
+#opt3
+{
+  margin: 10px;
+  background-color: #2298bf8d;
+  
+}
+#opt4
+{
+  margin: 10px;
+  background-color: #2298bf8d;
+  
+}
+.opt{
+  margin-left: 30px;
+  font-size: 20px;
+  width: 100%;
+  word-spacing: 5px;
+
+}
+span{
+  height: 100%;
+  width: 100%;
+}
+button
+{
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  background-color: red;
+  border: none;
+}
+h2{
+    text-align: center;
+    font-size: xx-large;
+}
+  </style>
+</head>
+<body>
+    <h2>Quizz</h2>
+      <div class="main">
+        <h1>
+          In web design what does CSS stand for?
+        </h1>
+
+        <div id="opt1">
+
+          <span>
+          <button onclick="wrong1()">
+            A
+          </button>
+          </span>
+          <span class="opt">
+            Counter Strike Source
+          </span>
+        </div>
+         <div id="opt2">
+
+          <span>
+          <button onclick="wrong2()">
+            B
+          </button>
+          </span>
+          <span class="opt">
+             Corrective style Sheet
+          </span>
+        </div>
+         <div id="opt3">
+
+          <span>
+          <button onclick="wrong3()">
+            C
+          </button>
+          </span>
+          <span class="opt">
+           Computer style Sheet
+          </span>
+        </div>
+         <div id="opt4">
+
+          <span>
+          <button id="ans" onclick="crt()">
+            D
+          </button>
+          </span>
+          <span class="opt">
+            Cascading Style Sheet
+          </span>
+        </div>
+      </div>
+      <script>
+        function wrong1(){
+          document.getElementById('opt1').style='background-color: red;color:white'
+        }
+        function wrong2(){
+
+          document.getElementById('opt2').style='background-color: red;color:white'
+        }
+        function wrong3(){
+
+          document.getElementById('opt3').style='background-color: red;color:white'
+        }
+        function crt(){
+
+          document.getElementById('opt4').style='background-color: green;color:white'
+          document.getElementById('ans').style='background-color: green;color:white'
+        }
+        
+      </script>
+</body>
+</html>
